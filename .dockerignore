@@ -1,0 +1,11 @@
+.git
+.gitignore
+*.iml
+modules.xml
+.env
+.env.example
+deploy.sh
+README.md
+LICENSE
+__pycache__
+*.pyc

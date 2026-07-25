@@ -1,0 +1,11 @@
+services:
+  bsc-alert-bot:
+    build: .
+    container_name: bsc-alert-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - ETHERSCAN_API_KEY=${ETHERSCAN_API_KEY}
+      - ETHERSCAN_CHAIN_ID=${ETHERSCAN_CHAIN_ID:-56}
